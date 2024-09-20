@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestion d'équipe eSport</title>
+  <style>
+    .team-card {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 15px;
+      margin: 10px;
+      display: inline-block;
+      width: 200px;
+    }
+    .team-name {
+      font-weight: bold;
+      font-size: 18px;
+    }
+    .members {
+      margin: 10px 0;
+    }
+    .choose-button {
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      border-radius: 5px;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <h1>Mon équipe</h1>
+  <p id="team-info">Aucune équipe sélectionnée</p>
+
+  <h3>Choisissez votre équipe :</h3>
+  <div id="team-selection"></div>
+
+  <h2>Journée actuelle : <span id="current-day">1</span></h2>
+  <button id="next-day">Passer au jour suivant</button>
+
+  <h3>Matchs du jour</h3>
+  <ul id="matches"></ul>
+  
+  <button id="reset-game">Réinitialiser la progression</button>
+
+  <script src="app.js"></script>
+</body>
+</html>
